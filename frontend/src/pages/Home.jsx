@@ -171,7 +171,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link to="/services">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8">
-                Ver Todos os Serviços
+                {t('viewAllServices')}
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
             </Link>
