@@ -60,7 +60,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Contato</h3>
+            <h3 className="text-lg font-semibold text-white">{t('contact')}</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-blue-400 flex-shrink-0" />
