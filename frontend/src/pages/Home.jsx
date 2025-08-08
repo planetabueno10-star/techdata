@@ -81,21 +81,20 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6 bg-blue-500 text-white">
               <Zap className="h-4 w-4 mr-2" />
-              Tecnologia Avançada em Florida
+              {t('heroAdvanced')}
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Soluções Tecnológicas 
-              <span className="text-orange-400"> Completas</span>
+              {t('heroTitle')} 
+              <span className="text-orange-400"> {t('heroTitleHighlight')}</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Da manutenção de computadores à cibersegurança empresarial. 
-              Transformamos desafios tecnológicos em soluções eficientes.
+              {t('heroSubtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/booking">
                 <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg">
                   <Calendar className="h-5 w-5 mr-2" />
-                  Agendar Serviço
+                  {t('scheduleService')}
                 </Button>
               </Link>
               <Link to="/contact">
@@ -105,7 +104,7 @@ const Home = () => {
                   className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg"
                 >
                   <MapPin className="h-5 w-5 mr-2" />
-                  Orçamento Grátis
+                  {t('freeQuote')}
                 </Button>
               </Link>
             </div>
