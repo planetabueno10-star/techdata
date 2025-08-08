@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from './ui/button';
+import LanguageSwitcher from './LanguageSwitcher';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   const navigationItems = [
-    { name: 'Início', path: '/' },
-    { name: 'Serviços', path: '/services' },
-    { name: 'Agendamento', path: '/booking' },
-    { name: 'Contato', path: '/contact' },
+    { name: t('home'), path: '/' },
+    { name: t('services'), path: '/services' },
+    { name: t('booking'), path: '/booking' },
+    { name: t('contact'), path: '/contact' },
   ];
 
   return (
@@ -64,8 +67,9 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <LanguageSwitcher />
             <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-              Orçamento Grátis
+              {t('freeQuote')}
             </Button>
           </nav>
 
@@ -96,8 +100,11 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <div className="py-2">
+                <LanguageSwitcher variant="mobile" />
+              </div>
               <Button className="bg-blue-600 hover:bg-blue-700 text-white w-fit">
-                Orçamento Grátis
+                {t('freeQuote')}
               </Button>
             </nav>
           </div>
