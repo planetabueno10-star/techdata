@@ -57,8 +57,8 @@ export const LanguageProvider = ({ children }) => {
       viewAllServices: 'Ver Todos os Serviços',
       
       // Service Categories
-      maintenanceRepair: 'Manutenção e Reparação',
-      maintenanceDesc: 'Computadores e notebooks com diagnóstico completo e reparo profissional',
+      maintenanceRepair: 'Manutenção e Reparação de Computadores',
+      maintenanceDesc: 'Computadores e notebooks com diagnóstico completo e reparo profissional. Orçamento grátis + busca e entrega sem custo em Orlando e arredores.',
       networkInstallation: 'Instalação de Redes',
       networkDesc: 'Configuração de redes residenciais e empresariais com alta performance',
       homeAutomation: 'Automação Doméstica',
