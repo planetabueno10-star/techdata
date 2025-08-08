@@ -132,13 +132,13 @@ const Home = () => {
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4 text-blue-600 border-blue-600">
               <Settings className="h-4 w-4 mr-2" />
-              Nossos Serviços
+              {t('ourServices')}
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Soluções Tecnológicas <span className="text-blue-600">Profissionais</span>
+              {t('professionalSolutions')}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Oferecemos um portfólio completo de serviços tecnológicos para residências e empresas em Winter Garden, Florida.
+              {t('servicesDescription')}
             </p>
           </div>
 
