@@ -83,26 +83,26 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Links Rápidos</h3>
+            <h3 className="text-lg font-semibold text-white">{t('quickLinks')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-300 hover:text-blue-400 transition-colors">Início</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Serviços</Link></li>
-              <li><Link to="/booking" className="text-gray-300 hover:text-blue-400 transition-colors">Agendamento</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-blue-400 transition-colors">Contato</Link></li>
+              <li><Link to="/" className="text-gray-300 hover:text-blue-400 transition-colors">{t('home')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('services')}</Link></li>
+              <li><Link to="/booking" className="text-gray-300 hover:text-blue-400 transition-colors">{t('booking')}</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-blue-400 transition-colors">{t('contact')}</Link></li>
             </ul>
             
             <div className="pt-4 space-y-2">
               <div className="flex items-center space-x-2">
                 <Shield size={16} className="text-green-400" />
-                <span className="text-sm text-gray-300">Serviços Garantidos</span>
+                <span className="text-sm text-gray-300">{t('guaranteedServicesFooter')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Award size={16} className="text-orange-400" />
-                <span className="text-sm text-gray-300">Técnicos Certificados</span>
+                <span className="text-sm text-gray-300">{t('certifiedTechnicians')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Users size={16} className="text-blue-400" />
-                <span className="text-sm text-gray-300">Atendimento 24/7</span>
+                <span className="text-sm text-gray-300">{t('support24_7')}</span>
               </div>
             </div>
           </div>
