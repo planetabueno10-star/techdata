@@ -47,14 +47,14 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-white">Serviços</h3>
+            <h3 className="text-lg font-semibold text-white">{t('services')}</h3>
             <ul className="space-y-2">
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Manutenção de Computadores</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Instalação de Redes</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Automação Doméstica</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Cyber Security</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Desenvolvimento de Software</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">Design de Sites</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('maintenanceRepair')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('networkInstallation')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('homeAutomation')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('cyberSecurity')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('softwareDevelopment')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-blue-400 transition-colors">{t('webDesign')}</Link></li>
             </ul>
           </div>
 
