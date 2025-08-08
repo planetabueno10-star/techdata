@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 import { 
   Phone, 
   Mail, 
@@ -15,6 +16,7 @@ import {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white">
