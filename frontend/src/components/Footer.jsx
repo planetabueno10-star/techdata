@@ -30,8 +30,7 @@ const Footer = () => {
               <span className="text-white ml-1">USA</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Soluções tecnológicas completas para residências e empresas em Winter Garden, Florida. 
-              Transformamos desafios em oportunidades digitais.
+              {t('footerDescription')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
