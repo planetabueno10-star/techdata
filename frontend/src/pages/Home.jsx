@@ -23,52 +23,54 @@ import {
 } from 'lucide-react';
 
 const Home = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
       icon: <Computer className="h-8 w-8 text-blue-600" />,
-      title: 'Manutenção e Reparação',
-      description: 'Computadores e notebooks com diagnóstico completo e reparo profissional',
-      features: ['Diagnóstico gratuito', 'Reparo em até 48h', 'Garantia de 90 dias']
+      title: t('maintenanceRepair'),
+      description: t('maintenanceDesc'),
+      features: [t('freeDiagnosis'), t('repair48h'), t('warranty90days')]
     },
     {
       icon: <Network className="h-8 w-8 text-blue-600" />,
-      title: 'Instalação de Redes',
-      description: 'Configuração de redes residenciais e empresariais com alta performance',
-      features: ['Wi-Fi profissional', 'Cabeamento estruturado', 'Configuração avançada']
+      title: t('networkInstallation'),
+      description: t('networkDesc'),
+      features: [t('professionalWifi'), t('structuredCabling'), t('advancedConfig')]
     },
     {
       icon: <HomeIcon className="h-8 w-8 text-blue-600" />,
-      title: 'Automação Doméstica',
-      description: 'Transforme sua casa em um ambiente inteligente e conectado',
-      features: ['Casa inteligente', 'Controle remoto', 'Integração completa']
+      title: t('homeAutomation'),
+      description: t('homeAutomationDesc'),
+      features: [t('smartHome'), t('remoteControl'), t('fullIntegration')]
     },
     {
       icon: <Shield className="h-8 w-8 text-blue-600" />,
-      title: 'Cyber Security',
-      description: 'Proteção completa contra ameaças digitais para casa e empresa',
-      features: ['Antivírus profissional', 'Firewall avançado', 'Monitoramento 24/7']
+      title: t('cyberSecurity'),
+      description: t('cyberSecurityDesc'),
+      features: [t('professionalAntivirus'), t('advancedFirewall'), t('monitoring24_7')]
     },
     {
       icon: <Code className="h-8 w-8 text-blue-600" />,
-      title: 'Desenvolvimento de Software',
-      description: 'Soluções personalizadas para suas necessidades específicas',
-      features: ['Software sob medida', 'Aplicações web', 'Sistemas integrados']
+      title: t('softwareDevelopment'),
+      description: t('softwareDesc'),
+      features: [t('customSoftware'), t('webApps'), t('integratedSystems')]
     },
     {
       icon: <Globe className="h-8 w-8 text-blue-600" />,
-      title: 'Design e Sites',
-      description: 'Criação de sites profissionais e identidade visual moderna',
-      features: ['Design responsivo', 'SEO otimizado', 'E-commerce completo']
+      title: t('webDesign'),
+      description: t('webDesignDesc'),
+      features: [t('responsiveDesign'), t('seoOptimized'), t('fullEcommerce')]
     }
   ];
 
   const benefits = [
-    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: 'Orçamento sem custo' },
-    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: 'Busca e entrega gratuita' },
-    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: 'Atendimento 24/7' },
-    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: 'Garantia em todos os serviços' },
-    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: 'Técnicos certificados' },
-    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: 'Suporte pós-venda' }
+    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: t('freeEstimate') },
+    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: t('freePickupDelivery') },
+    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: t('support24_7') },
+    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: t('guaranteedServices') },
+    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: t('certifiedTechnicians') },
+    { icon: <CheckCircle className="h-5 w-5 text-green-600" />, text: t('afterSalesSupport') }
   ];
 
   return (
